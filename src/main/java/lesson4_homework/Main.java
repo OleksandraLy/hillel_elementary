@@ -28,6 +28,7 @@ public class Main {
         sumOfTransaction(sumOfTransaction, helper, scanner, client);
 
         TransactionService transactionService = new TransactionService();
+        transactionService.moneyTransition(client, recipientAccountId);
         System.out.println("Operation is finished. Money transaction is successful");
         scanner.close();
     }
